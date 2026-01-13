@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jin</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 150px 120px 110px 110px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            gap: 5px;
+        }
+        .container>div {
+            background-color: gray;
+        }
+        .box1 {
+            grid-row: span 3;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 5px;
+            grid-row: span 3;
+        }
+        .box2 {
+            background-color: brown;
+            flex: 3;
+        }
+        .box3 {
+            background-color: brown;
+            flex: 2;
+        }
+        .box4 {
+            background-color: brown;
+            flex: 1;
+        }
+        .box5 {
+            grid-column: span 2;
+        }
+        .box6 {
+            grid-column: span 2;
+        }
+        .box7 {
+            grid-column: span 2;
+        }
+        .box8 {
+            grid-column: span 4;
+        }
+        .box10 {
+            grid-column: span 1;
+        }
+        .box11 {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="container2">
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="box5"></div>
+
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+    </div>
+</body>
+
+</html>
